@@ -10,32 +10,28 @@ on: [push]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  # build:
-  #   runs-on: ubuntu-latest
+  This workflow contains a single job called "build"
+  build:
+    runs-on: ubuntu-latest
 
-  #   steps:
-  #   - uses: actions/checkout@v2
-  #   - name: Use Node.js
-  #     uses: actions/setup-node@v1
-  #     with:
-  #       node-version: '12.x'  
-  #   - run: npm ci
-  #   - run: npm run build
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '13.x'  
+    - run: npm ci && npm run build
   
   deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: FTP Deploy
-      uses: SamKirkland/FTP-Deploy-Action@3.0.0
+    - uses: actions/checkout@v2
+    - name: Upload ftp
+      uses: sebastianpopp/ftp-action@releases/v2
       with:
-        # Deployment destination server & path. Formatted as protocol://domain.com:port/full/destination/path/
-        ftp-server: ${{ secrets.FTP_SERVER }}
-        # FTP account username
-        ftp-username: ${{ secrets.FTP_USERNAME }}
-        # FTP account password
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
-        # The local folder to copy, defaults to root project folder
-        local-dir: "docs"
-        # Passes through options into git-ftp
-        # git-ftp-args: # optional
+        host: ${{ secrets.FTP_SERVER }}
+        user: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        localDir: "www/*"
+        remoteDir: ""
