@@ -1,12 +1,6 @@
 /* REMOVING THE FOLLOWING LINE WILL BREAK THE STYLING OF THE APPLICATION */
 @import '../../global/app.css';
 
-/*
-Define custom styles for colors etc. below
-
-E.g. you can uncomment the CSS below to adjust the primary color
-*/
-
 
 :root {
   --c-primary: #e60005;
@@ -14,8 +8,4 @@ E.g. you can uncomment the CSS below to adjust the primary color
   --c-primary-lighter: #fac3af;
   --c-primary-lightest: #2481ff;
   --c-tertiary: #ebf5ff;
-}
-
-.qr-code__img-code {
-  display:none;
 }
