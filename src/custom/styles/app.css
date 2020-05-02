@@ -1,17 +1,11 @@
 /* REMOVING THE FOLLOWING LINE WILL BREAK THE STYLING OF THE APPLICATION */
 @import '../../global/app.css';
 
-/*
-Define custom styles for colors etc. below
 
-E.g. you can uncomment the CSS below to adjust the primary color
-*/
-
-/*
 :root {
-  --c-primary: #003f97;
-  --c-primary-light: #004ebb;
-  --c-primary-lighter: #005fdf;
+  --c-primary: #e60005;
+  --c-primary-light: #eb8264;
+  --c-primary-lighter: #fac3af;
   --c-primary-lightest: #2481ff;
+  --c-tertiary: #ebf5ff;
 }
-*/
