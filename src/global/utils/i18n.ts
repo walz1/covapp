@@ -37,7 +37,7 @@ export const initialLanguage: Promise<string> = new Promise(resolve => {
     .use(languageDetector)
     .init({
       detection,
-      fallbackLng: 'en',
+      fallbackLng: 'de',
       whitelist: LANGUAGES.map(({ code }) => code),
       resources: LANGUAGE_RESOURCES,
     })

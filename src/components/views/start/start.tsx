@@ -65,15 +65,13 @@ export class Start {
       <div class="c-card-wrapper start">
         <d4l-card classes="card--desktop card--text-center">
           <div slot="card-header">
-            <h1 class="start__headline-1">CovApp</h1>
+            <h1 class="start__headline-1">CovApp für die Pflege</h1>
             <h2 class="start__headline-2">{i18next.t('start_headline')}</h2>
           </div>
           <div class="start__content u-text-align--left" slot="card-content">
             <ul class="u-no-margin-top u-padding-bottom--normal">
               <li>{i18next.t('start_paragraph_1_option_1')}</li>
               <li>{i18next.t('start_paragraph_1_option_2')}</li>
-              <li>{i18next.t('start_paragraph_1_option_3')}</li>
-              <li>{i18next.t('start_paragraph_1_option_4')}</li>
             </ul>
             {this.completed && <h3>{i18next.t('found_code')}</h3>}
             <stencil-route-link

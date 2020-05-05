@@ -1,7 +1,7 @@
 import { Component, h, State, Listen, Prop } from '@stencil/core';
 import i18next from '../../global/utils/i18n';
 import { getRootCSSPropertyValue } from '../../global/utils/css-properties';
-import { IS_COLLABORATION } from '../../global/layouts';
+import { IS_CHARITE } from '../../global/layouts';
 
 @Component({
   styleUrl: 'recommendation.css',
@@ -54,7 +54,7 @@ export class Recommendation {
           </d4l-accordion>
         </div>
 
-        {!IS_COLLABORATION && (
+        {IS_CHARITE && (
           <div class="u-padding-top--normal">
             <d4l-accordion
               open={false}

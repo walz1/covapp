@@ -91,7 +91,7 @@ export class AppRoot {
         <div
           class={`app-message ease-in-top ${
             appMessage ? 'ease-in-top--active' : ''
-          }`}
+            }`}
         >
           {appMessage && (
             <d4l-snack-bar
@@ -153,7 +153,7 @@ export class AppRoot {
               anchorTitle="Home link"
               anchorClass="u-display-block c-logo"
             >
-              <h1>CovApp</h1>
+              <h1>CovApp für die Pflege</h1>
             </stencil-route-link>
           )}
           <d4l-language-switcher

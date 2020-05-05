@@ -9,3 +9,8 @@
   --c-primary-lightest: #2481ff;
   --c-tertiary: #ebf5ff;
 }
+
+mark {
+  color: #e60005;
+  background-color: white;
+}
