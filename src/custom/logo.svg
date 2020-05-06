@@ -4,7 +4,7 @@
 	 viewBox="0 0 622.1 119.9" style="enable-background:new 0 0 622.1 119.9;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#E30613;}
-	.st1{font-family:'ArialMT';}
+	.st1{font-family:'Arial';}
 	.st2{font-size:34px;}
 </style>
 <g>
@@ -52,5 +52,5 @@
 		<path d="M208.5,100.8l9.2-10.4h-8.5v-3.7h14.9v3.7l-9.2,10.4h9.9v3.7h-16.3V100.8z"/>
 	</g>
 </g>
-<text transform="matrix(1 0 0 1 328.002 63.2092)"><tspan x="0" y="0" class="st1 st2">Landesverband </tspan><tspan x="0" y="40.8" class="st1 st2">Brandenburg e.V.</tspan></text>
+<text transform="matrix(1 0 0 1 328.002 63.2092)" font-family:"Arial"><tspan x="0" y="0" class="st1 st2">Landesverband </tspan><tspan x="0" y="40.8" class="st1 st2">Brandenburg e.V.</tspan></text>
 </svg>
