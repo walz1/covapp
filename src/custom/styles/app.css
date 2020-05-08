@@ -3,11 +3,13 @@
 
 
 :root {
-  --c-primary: #e60005;
-  --c-primary-light: #eb8264;
+  --c-primary: #e46450;
+  --c-primary-light: #002d55;
   --c-primary-lighter: #fac3af;
   --c-primary-lightest: #2481ff;
   --c-tertiary: #ebf5ff;
+  --font-sans: "Helvetica Neue", "Open Sans", Arial, sans-serif;
+  --c-gray: #554f4a;
 }
 
 mark {
